@@ -1,0 +1,69 @@
+
+// mixins
+
+=align($direction: center)
+  text-align: $direction
+
+=background($url, $position: 0 0, $repeat: no-repeat)
+  background: url($url) $repeat $position
+
+=bold($size: 12px)
+  font-size: $size
+  font-weight: bold
+
+=border($color: red)
+  border: 1px solid $color
+
+=border-radius($radius: 5px)
+  border-radius: $radius
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  
+=border-top-left-radius($radius: 5px)
+  border-top-left-radius: $radius
+  -moz-border-radius-topleft: $radius
+  -webkit-border-top-left-radius: $radius
+  
+=border-top-right-radius($radius: 5px)
+  border-top-right-radius: $radius
+  -moz-border-radius-topright: $radius
+  -webkit-border-top-right-radius: $radius
+  
+=border-bottom-right-radius($radius: 5px)
+  border-bottom-right-radius: $radius
+  -moz-border-radius-bottomright: $radius
+  -webkit-border-bottom-right-radius: $radius
+  
+=border-bottom-left-radius($radius: 5px)
+  border-bottom-left-radius: $radius
+  -moz-border-radius-bottomleft: $radius
+  -webkit-border-bottom-left-radius: $radius
+  
+=case($case: uppercase)
+  text-transform: $case
+
+=cursor($cursor: pointer)
+  cursor: $cursor
+    
+=margin($bottom: 15px)
+  margin-bottom: $bottom
+
+=bold-text($family: Arial,$color: white, $size: 14px, $transform: normal)
+  font-family: $family, arial, helvetica, sans-serif
+  color: $color
+  font-weight: bold
+  font-size: $size
+  text-transform: $transform
+
+=format-text($family: Arial,$color: white, $size: 14px, $weight: normal)
+  font-family: $family, arial, helvetica, sans-serif
+  color: $color
+  font-weight: $weight
+  font-size: $size
+  
+
+=float-right($margin: 10px)
+  float: right
+  margin-right: $margin
+
+  

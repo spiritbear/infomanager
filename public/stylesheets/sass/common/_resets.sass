@@ -1,0 +1,129 @@
+
+// default styles
+
+html,
+body
+  height: 100%
+
+abbr, acronym, address, article, aside, blockquote, body, button, caption, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, label, legend, li, menu, nav, object, ol, p, pre, q, section, span, table, tbody, textarea, td, tfoot, th, thead, tr, ul, video
+  padding: 0
+  margin: 0
+  
+article, aside, button, dialog, embed, fieldset, figcaption, figure, footer, form, header, hgroup, hr, img, input, label, menu, nav, object, section, select, textarea, video
+  display: block
+
+body,
+input,
+select,
+textarea,
+table th,
+table td
+  font-size: 12px
+  font-family: helvetica, arial, sans-serif
+
+body
+  color: #000
+  background-color: #fff 
+
+textarea
+  overflow: auto 
+
+table
+  border-collapse: collapse 
+
+td,
+th
+  text-align: left
+  font-weight: normal 
+
+hr,
+img,
+abbr,
+iframe,
+fieldset
+  border: none 
+
+ol
+  padding-left: 15px
+  margin-left: 15px
+
+ul,
+ul li
+  list-style: none 
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+
+p
+  +margin  
+
+b,
+strong
+  font-weight: bold 
+
+i,
+em
+  font-style: italic 
+
+small
+  font-size: 10px 
+
+button,
+.form_button input
+  border: 0 
+  cursor: pointer
+  border-style: none
+  background-color: transparent
+
+button::-moz-focus-inner
+  border: none
+  
+.form_button
+  display: table
+  
+.clear,
+.horizontal
+  clear: both 
+
+.clear:after,
+.button:after,
+.horizontal:after
+  content: '.'
+  height: 0
+  clear: both
+  display: block
+  visibility: hidden 
+
+.button a,
+ul.horizontal li,
+dl.horizontal dt,
+dl.horizontal dd
+  float: left 
+
+ul.vertical li,
+dl.vertical dt,
+dl.vertical dd
+  float: none !important
+
+.fluid li,
+.fluid dt,
+.fluid dd
+  display: inline 
+
+ul.scaffold
+  display: table
+  li,
+  li > a
+    display: table-cell
+
+hr,
+.spacer
+  width: auto
+  height: 1px
+  font-size: 1px 
+
+.default,
+.off_state
+  display: none 
+
+

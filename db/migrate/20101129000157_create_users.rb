@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :email, :limit => 50
       t.string :crypted_password, :limit => 50
+      t.integer :access_level, :default => 5      
       t.string :password_salt
       t.string :persistence_token
       t.string :single_access_token

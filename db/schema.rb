@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20101129000157) do
   create_table "users", :force => true do |t|
     t.string   "email",               :limit => 50
     t.string   "crypted_password",    :limit => 50
+    t.integer  "access_level",                      :default => 5
     t.string   "password_salt"
     t.string   "persistence_token"
     t.string   "single_access_token"

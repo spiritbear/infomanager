@@ -11,7 +11,11 @@
       = stylesheet_link_tag("common/ie6")
     /[if gte IE 7]
       = stylesheet_link_tag("common/ie7")
+    %script{:src => "http://use.typekit.com/xxt0wsb.js" }
+    %script
+      try{Typekit.load();}catch(e){}
     = javascript_include_tag "jquery.min","highcharts/highcharts"
+    
     = yield :charts_js
   %body
     #focus

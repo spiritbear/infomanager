@@ -54,11 +54,12 @@ Infomanager::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
+  match '/users/dashboard' => "dashboard#dashboard", :as => :dashboard
   resources :users
   resources :user_sessions
   match '/login' => "user_sessions#new", :as => :login
   match '/logout' => "user_sessions#destroy", :as => :logout
-  match '/users/dashboard' => "dashboard#index", :as => :dashboard
   
-  match ':controller(/:action(/:id(.:format)))'
+  
+  # match ':controller(/:action(/:id(.:format)))'
 end

@@ -4,7 +4,6 @@
     %meta( charset='utf-8' )
     %title
       Your Account dashboard
-    %meta( name='description' content='' )
     = stylesheet_link_tag("dashboard")
     /[if IE]
       = stylesheet_link_tag("common/ie")
@@ -12,10 +11,20 @@
       = stylesheet_link_tag("common/ie6")
     /[if gte IE 7]
       = stylesheet_link_tag("common/ie7")
+    = javascript_include_tag "jquery.min","highcharts/highcharts"
+    = yield :charts_js
   %body
     #focus
       #header
-        Header Content
+        #logo
+          Your Dashboard
+        %ul.horizontal
+          %li
+            = link_to "Profile", "#"
+          %li
+            = link_to "Do Something", "#"
+          %li
+            = link_to "Logout", logout_url
       #content.clear
         = yield
       #footer
